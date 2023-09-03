@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 10vh;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header li {
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+header a {
+  text-decoration: none;
+  color: #446381;
+}
+
+header a:hover,
+header a:active {
+  text-decoration: none;
+  color: #1a78d7;
+  transition: 0.3s;
+}

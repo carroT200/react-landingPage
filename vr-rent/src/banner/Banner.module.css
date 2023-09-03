@@ -1,0 +1,28 @@
+main {
+  text-align: left;
+  margin: 15% 5%;
+}
+
+.main p {
+  color: #446381;
+  font-size: 24px;
+  margin: 0;
+}
+
+.main-paragraph {
+  font-size: 68px;
+  margin: 20px 0;
+  color: #eb8382;
+}
+
+.paragraph {
+  font-size: 58px;
+  color: #446381;
+  margin: 20px 0;
+}
+
+.text {
+  color: #826f8c;
+  font-size: 18px;
+  margin: 20px 0;
+}

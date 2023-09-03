@@ -1,0 +1,18 @@
+button {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: inherit;
+
+  box-shadow: 10px 5px 5px rgb(57, 44, 106);
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #4499d9;
+  background-image: linear-gradient(#4499d9, #7367be);
+  border: none;
+}
+
+button:hover {
+  transform: scale(1.25) perspective(1px);
+  transition: 0.4s;
+}
