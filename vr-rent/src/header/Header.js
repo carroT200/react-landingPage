@@ -21,7 +21,7 @@ const Header = () => {
             <a href="#">Rules</a>
           </li>
           <Button />
-        </ul>
+        </ul> 
       </nav>
     </header>
   );

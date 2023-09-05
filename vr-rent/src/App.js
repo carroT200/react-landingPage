@@ -1,5 +1,5 @@
 import Header from './header/Header';
-import Banner from './banner/Banner';
+import MainContent from './main-content/MainContent';
 
 import './App.css';
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Banner />
+      <MainContent />
     </div>
   );
 }

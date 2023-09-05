@@ -5,6 +5,7 @@ header {
   position: fixed;
   top: 0;
   height: 10vh;
+  background-color: #446381;
 }
 
 header ul {
@@ -20,7 +21,7 @@ header li {
 
 header a {
   text-decoration: none;
-  color: #446381;
+  color: #ffffff;
 }
 
 header a:hover,
