@@ -7,11 +7,14 @@ const Banner = (props) => {
   return (
     <main className={classes.content}>
       <div className={classes.wrapper}>
-        <p>{props.smallParagraph}</p>
-        <p className={classes['main-paragraph']}>{props.bigParagraph}</p>
-        <p className={classes['paragraph']}>{props.midlleParagraph}</p>
-        <p className={classes.text}>{props.text}</p>
-        <Button />
+        <section>
+          <p>{props.smallParagraph}</p>
+          <p className={classes['main-paragraph']}>{props.bigParagraph}</p>
+          <p className={classes['paragraph']}>{props.midlleParagraph}</p>
+          <p className={classes.text}>{props.text}</p>
+          <Button />
+        </section>
+        <img className={classes.img} src={props.image} alt="" />
       </div>
     </main>
   );

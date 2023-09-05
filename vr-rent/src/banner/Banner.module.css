@@ -1,12 +1,15 @@
 main {
   text-align: left;
   margin: 15% 9%;
+}
 
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  background-image: url(../asserts/character.png);
-  height: 500px;
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 60%;
 }
 
 .main p {

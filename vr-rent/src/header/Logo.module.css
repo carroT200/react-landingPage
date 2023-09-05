@@ -1,5 +1,18 @@
 header .logo {
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 700;
-  color: rgb(22, 160, 160);
+
+  background: url(../asserts//abstract-bg.jpeg);
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: anime 30s infinite ease-in-out;
+}
+
+@keyframes anime {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
