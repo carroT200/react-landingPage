@@ -1,0 +1,23 @@
+.wrapper {
+  text-align: center;
+  margin: 15% 9%;
+}
+
+.label p {
+  color: #446381;
+  font-size: 24px;
+  margin: 0;
+}
+
+.main-paragraph {
+  font-size: 68px;
+  margin: 20px 0;
+  color: #eb8382;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 1em;
+  grid-auto-flow: dense;
+}

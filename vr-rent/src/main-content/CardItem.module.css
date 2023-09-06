@@ -1,0 +1,28 @@
+.wrapper {
+  background-color: rgb(216 232 246);
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.name {
+  color: #446381;
+  font-size: 32px;
+  margin: 30px 10px;
+}
+
+.price {
+  color: #eb8382;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 30px 10px;
+}
+
+.list {
+  color: #826f8c;
+  font-size: 18px;
+  margin: 25px 10px;
+}
+
+.swoosh {
+  margin-right: 15px;
+}

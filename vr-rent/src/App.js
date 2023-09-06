@@ -1,6 +1,6 @@
 import Header from './header/Header';
 import MainContent from './main-content/MainContent';
-
+import Cards from './main-content/Cards';
 import './App.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <MainContent />
+      <Cards />
     </div>
   );
 }

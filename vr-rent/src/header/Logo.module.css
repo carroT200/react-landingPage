@@ -4,8 +4,9 @@ header .logo {
 
   background: url(../asserts//abstract-bg.jpeg);
   color: transparent;
+  background-clip: content-box;
   -webkit-background-clip: text;
-  animation: anime 30s infinite ease-in-out;
+  animation: anime 30s cubic-bezier(0, 0.84, 0.52, 0.96);
 }
 
 @keyframes anime {
