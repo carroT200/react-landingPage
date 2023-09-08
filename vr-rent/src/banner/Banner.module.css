@@ -4,12 +4,14 @@ main {
 }
 
 .wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 6rem;
+  grid-auto-flow: dense;
 }
 
 img {
-  width: 60%;
+  width: 100%;
 }
 
 .main p {
@@ -35,4 +37,22 @@ img {
   font-size: 18px;
   margin: 20px 0;
   line-height: 29px;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 20% 9%;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 20% 9%;
+  }
+}
+
+@media (max-width: 391px) {
+  main {
+    margin: 30% 9%;
+  }
 }

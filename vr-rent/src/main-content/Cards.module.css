@@ -18,6 +18,6 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  grid-gap: 1em;
+  grid-gap: 6rem;
   grid-auto-flow: dense;
 }

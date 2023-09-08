@@ -1,11 +1,10 @@
-import { Fragment } from 'react';
 import Button from '../header/Button';
 
 import classes from './Banner.module.css';
 
 const Banner = (props) => {
   return (
-    <main className={classes.content}>
+    <main>
       <div className={classes.wrapper}>
         <section>
           <p>{props.smallParagraph}</p>

@@ -1,6 +1,7 @@
 header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   position: fixed;
   top: 0;
@@ -29,4 +30,21 @@ header a:active {
   text-decoration: none;
   color: #1a78d7;
   transition: 0.3s;
+}
+
+@media (max-width: 685px) {
+  header {
+    height: 8vh;
+  }
+}
+
+@media (max-width: 391px) {
+  header {
+    height: 10vh;
+  }
+
+  header li {
+    list-style-type: none;
+    margin-right: 20px;
+  }
 }

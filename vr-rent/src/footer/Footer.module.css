@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text {
+  margin-left: 10px;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  background-color: rgb(216 232 246);
+  padding: 10px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.logo:hover,
+.logo:active {
+  background-color: rgb(70, 158, 236);
+  transition: 0.3s;
+}

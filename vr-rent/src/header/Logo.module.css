@@ -17,3 +17,9 @@ header .logo {
     background-position: 100% 100%;
   }
 }
+
+@media (max-width: 685px) {
+  header .logo {
+    font-size: 24px;
+  }
+}

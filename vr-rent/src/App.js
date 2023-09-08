@@ -1,6 +1,8 @@
 import Header from './header/Header';
 import MainContent from './main-content/MainContent';
 import Cards from './main-content/Cards';
+import Footer from './footer/Footer';
+
 import './App.css';
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
       <Header />
       <MainContent />
       <Cards />
+      <Footer />
     </div>
   );
 }

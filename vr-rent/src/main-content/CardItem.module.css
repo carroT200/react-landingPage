@@ -23,6 +23,9 @@
   margin: 25px 10px;
 }
 
-.swoosh {
-  margin-right: 15px;
+.wrapper:hover,
+.wrapper.active {
+  background-color: rgb(70, 158, 236);
+  transition: 0.3s;
+  scale: 1.1;
 }
