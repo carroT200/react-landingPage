@@ -1,50 +1,51 @@
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+nav {
+  height: 8vh;
   width: 100%;
   position: fixed;
+  z-index: 50;
   top: 0;
-  height: 10vh;
+  display: flex;
+  align-items: center;
   background-color: #446381;
 }
 
-header ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+nav main {
+  padding: 50px;
 }
 
-header li {
-  list-style-type: none;
-  margin-right: 40px;
+nav p {
+  margin: 20px;
 }
 
-header a {
-  text-decoration: none;
-  color: #ffffff;
+.burger {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  position: relative;
 }
 
-header a:hover,
-header a:active {
-  text-decoration: none;
-  color: #1a78d7;
-  transition: 0.3s;
+.burger::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 20px;
+  background-color: black;
+  height: 2px;
 }
 
-@media (max-width: 685px) {
-  header {
-    height: 8vh;
-  }
+.burger span {
+  position: absolute;
+  top: 9px;
+  width: 20px;
+  background-color: black;
+  height: 2px;
 }
 
-@media (max-width: 391px) {
-  header {
-    height: 10vh;
-  }
-
-  header li {
-    list-style-type: none;
-    margin-right: 20px;
-  }
+.burger::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  background-color: black;
+  height: 2px;
 }

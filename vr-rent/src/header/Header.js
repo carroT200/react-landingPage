@@ -1,29 +1,26 @@
-import Logo from './Logo';
-import Button from './Button';
+import React, { useState } from 'react';
+import Menu from './menu/Menu';
 
 import classes from './Header.module.css';
 
 const Header = () => {
+  const [menuActive, setMenuActive] = useState(false);
+
+  const items = [
+    { value: 'Profile', href: '/main' },
+    { value: 'Rules', href: '/rules' },
+    { value: 'Prices', href: '/price' },
+  ];
   return (
-    <header>
-      <div>
-        <Logo />
+    <nav>
+      <div
+        className={classes.burger}
+        onClick={() => setMenuActive(!menuActive)}
+      >
+        <span />
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About us</a>
-          </li>
-          <li>
-            <a href="#">Rules</a>
-          </li>
-          <Button />
-        </ul>
-      </nav>
-    </header>
+      <Menu items={items} active={menuActive} setActive={setMenuActive} />
+    </nav>
   );
 };
 
