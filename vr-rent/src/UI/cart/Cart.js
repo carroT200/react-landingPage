@@ -65,7 +65,7 @@ const Cart = (props) => {
         {EmailInputIsInvalid && (
           <p className="error"> Email must not be empty</p>
         )}
-        {sendLetter && <p className="correct">Success </p>}
+        {sendLetter && <p className="correct">Success! </p>}
         <div className="buttons">
           <button disabled={!formIsValid} className="btn">
             {' '}
