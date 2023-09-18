@@ -1,0 +1,54 @@
+.cart-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 20rem;
+  overflow: auto;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+label {
+  font-size: 18px;
+  color: black;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: #240370;
+  background-color: #e0d4fd;
+}
+
+.form-control input .invalid {
+  outline: none;
+  border-color: #240370;
+  background-color: #b72558;
+}
+
+.btn {
+  margin-right: 15px;
+
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: right;
+}
+
+.error {
+  color: red;
+}
+
+.correct {
+  color: rgb(30, 150, 42);
+}

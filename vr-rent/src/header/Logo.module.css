@@ -1,12 +1,13 @@
-header .logo {
+.logo {
   font-size: 34px;
   font-weight: 700;
+  margin-left: 2%;
 
   background: url(../asserts//abstract-bg.jpeg);
   color: transparent;
   background-clip: content-box;
   -webkit-background-clip: text;
-  animation: anime 30s cubic-bezier(0, 0.84, 0.52, 0.96);
+  animation: anime 50s cubic-bezier(0, 0.84, 0.52, 0.96);
 }
 
 @keyframes anime {
@@ -19,7 +20,7 @@ header .logo {
 }
 
 @media (max-width: 685px) {
-  header .logo {
+  .logo {
     font-size: 24px;
   }
 }

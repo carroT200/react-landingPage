@@ -32,16 +32,18 @@ const CardInfo = [
   },
 ];
 
-const Cards = () => {
+const Cards = (props) => {
   return (
     <section className={classes.wrapper}>
       <label>
-        <p>Our Pricing</p>
+        <h6>Our Pricing</h6>
         <p className={classes['main-paragraph']}>Choose Your Plan</p>
       </label>
       <div className={classes.cards}>
         {CardInfo.map((card) => (
           <CardItem
+            id={props.name}
+            onClick={props.onShowCart}
             name={card.name}
             price={card.price}
             userQnty={card.userQnty}

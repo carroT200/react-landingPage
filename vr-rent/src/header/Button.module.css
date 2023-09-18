@@ -17,6 +17,23 @@ button:hover {
   transition: 0.4s;
 }
 
+.badge {
+  background: url(../asserts//abstract-bg.jpeg);
+  color: transparent;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  animation: anime 50s cubic-bezier(0, 0.84, 0.52, 0.96);
+}
+
+@keyframes anime {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
 @media (max-width: 685px) {
   button {
     padding: 5px 7px;

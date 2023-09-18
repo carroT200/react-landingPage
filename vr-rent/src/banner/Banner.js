@@ -1,5 +1,3 @@
-import Button from '../header/Button';
-
 import classes from './Banner.module.css';
 
 const Banner = (props) => {
@@ -11,7 +9,6 @@ const Banner = (props) => {
           <p className={classes['main-paragraph']}>{props.bigParagraph}</p>
           <p className={classes['paragraph']}>{props.midlleParagraph}</p>
           <p className={classes.text}>{props.text}</p>
-          <Button />
         </section>
         <img className={classes.img} src={props.image} alt="" />
       </div>

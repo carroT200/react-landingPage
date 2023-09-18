@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import Menu from './menu/Menu';
+import Menu from './panel/Menu';
+import Logo from './Logo';
+import Button from './Button';
 
 import classes from './Header.module.css';
 
-const Header = () => {
+const Header = (props) => {
   const [menuActive, setMenuActive] = useState(false);
 
   const items = [
@@ -13,13 +15,17 @@ const Header = () => {
   ];
   return (
     <nav>
-      <div
-        className={classes.burger}
-        onClick={() => setMenuActive(!menuActive)}
-      >
-        <span />
-      </div>
       <Menu items={items} active={menuActive} setActive={setMenuActive} />
+      <div className={classes.menu}>
+        <div
+          className={classes.burger}
+          onClick={() => setMenuActive(!menuActive)}
+        >
+          <span />
+        </div>
+        <Logo />
+        <Button onShow={props.onShowCart} />
+      </div>
     </nav>
   );
 };

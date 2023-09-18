@@ -4,8 +4,12 @@ import Swoosh from './Swoosh';
 import classes from './CardItem.module.css';
 
 const CardItem = (props) => {
+  const submitHandler = (event) => {
+    event.preventDefault();
+  };
+
   return (
-    <section className={classes.wrapper}>
+    <form className={classes.wrapper} onSubmit={submitHandler}>
       <h4 className={classes.name}>{props.name}</h4>
       <h2 className={classes.price}>{props.price}</h2>
       <p className={classes.list}>
@@ -24,8 +28,8 @@ const CardItem = (props) => {
         <Swoosh />
         {props.help}
       </p>
-      <CardButton />
-    </section>
+      <CardButton onClick={props.onClick} />
+    </form>
   );
 };
 

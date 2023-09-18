@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-top: 1px solid #446381;
 }
 
 .text {
@@ -18,14 +19,12 @@
 }
 
 .logo {
-  background-color: rgb(216 232 246);
-  padding: 10px;
-  border-radius: 30px;
   margin-right: 20px;
+  padding: 10px;
 }
 
-.logo:hover,
-.logo:active {
-  background-color: rgb(70, 158, 236);
-  transition: 0.3s;
+.logo path:hover,
+.logo path:active {
+  fill: #eb8382;
+  transition: 0.1s;
 }
