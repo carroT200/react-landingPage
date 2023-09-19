@@ -1,18 +1,13 @@
 import React, { useState } from 'react';
 import Menu from './panel/Menu';
 import Logo from './Logo';
-import Button from './Button';
 
 import classes from './Header.module.css';
 
 const Header = (props) => {
   const [menuActive, setMenuActive] = useState(false);
 
-  const items = [
-    { value: 'Profile', href: '/main' },
-    { value: 'Rules', href: '/rules' },
-    { value: 'Prices', href: '/price' },
-  ];
+  const items = [{ value: 'Rules', href: 'https://vrroom.lv/en/noteikumi' }];
   return (
     <nav>
       <Menu items={items} active={menuActive} setActive={setMenuActive} />
@@ -24,7 +19,6 @@ const Header = (props) => {
           <span />
         </div>
         <Logo />
-        <Button onShow={props.onShowCart} />
       </div>
     </nav>
   );
